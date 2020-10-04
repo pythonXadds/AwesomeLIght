@@ -78,7 +78,7 @@ bindsym $mod+Shift+Right move right
 # split in horizontal orientation
 bindsym $mod+h split h
 
-# split in vertical orientation
+# My Favourite program shortcuts (Vim) and (vscode)
 bindsym $mod+v exec gvim
 bindsym $mod+c exec code
 
