@@ -39,7 +39,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec termite
-
+bindsym $mod+Shift+Retuen exec thunar
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -79,7 +79,8 @@ bindsym $mod+Shift+Right move right
 bindsym $mod+h split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod+v exec gvim
+bindsym $mod+c exec code
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -203,7 +204,7 @@ bar {
 
 
 exec_always --no-startup-id xrandr --output LVDS1 --off --output VGA1 --primary --mode 1280x1024 --pos 0x0 --rotate normal --output VIRTUAL1 --off
-#exec variety
-exec_always --no-startup-id nitrogen --restore
+exec variety
+#exec_always --no-startup-id nitrogen --restore
 
 
