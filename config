@@ -87,6 +87,8 @@ bindsym $mod+h split h
 # My favourite program shortcuts
 bindsym $mod+v exec gvim
 bindsym $mod+c exec code
+bindsym $mod+r exec termite -e ranger
+
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -162,12 +164,13 @@ mode "resize" {
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
         bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
+        
 }
 
 
 # hide/unhide i3status bar
 bindsym $mod+m bar mode toggle
+
 
 # Theme colors
 # class                 border  bground text    indicator child_border
@@ -200,5 +203,12 @@ exec_always --no-startup-id xrandr --output LVDS1 --off --output VGA1 --primary 
 # set wallpaper autostart
 exec variety
 #exec_always --no-startup-id nitrogen --restore
+
+#i3ass additions https://github.com/budlabs/i3ass (a selection of useful addons for i3wm) 
+
+# This script allows one to scroll throught windows using the Tab key
+
+bindsym Mod4+Tab         exec --no-startup-id i3flip next
+bindsym Mod4+Shift+Tab   exec --no-startup-id i3flip prev
 
 
