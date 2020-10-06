@@ -191,20 +191,22 @@ mode "resize" {
 # hide/unhide i3status bar
 bindsym $mod+m bar mode toggle
 
-
+       
 # Theme colors
 # class                 border  bground text    indicator child_border
-client.focused          #56606f #56606f #64ffda #56606f   #56606f
-client.focused_inactive #384254 #384254 #e6ffff #d2d2d2   #384254
-client.unfocused        #5a5c5f #5a5c5f #e6ffff #d2d2d2   #6a6c5f
-client.urgent           #f0696f #f0696f #121212 #d2d2d2   #984141
-client.placeholder      #64ffda #121212 #121212 #d2d2d2   #64ffda
+client.focused          #5a5c5f #fdf6e3 #507eaf #56606f   #56606f
+client.focused_inactive #384254 #fdf6e3 #507eaf #d2d2d2   #384254
+client.unfocused        #5a5c5f #fdf6e3 #507eaf #d2d2d2   #6a6c5f
+client.urgent           #f0696f #fdf6e3 #507eaf #d2d2d2   #984141
+client.placeholder      #64ffda #121212 #507eaf #d2d2d2   #64ffda
 
 client.background       #d2d2d2
 
 bar {
-    position top
-  colors {
+    position bottom
+       mode hide
+    hidden_state hide
+     colors {
     background #ffffff
     statusline #2d2d2d
     separator  #f44336
