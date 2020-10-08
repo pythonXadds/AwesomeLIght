@@ -1,7 +1,7 @@
 #!/bin/bash
 
-## Author : Aditya Shakya
-## Github : adi1090x
+## original Author : Aditya Shakya
+## Solarized colours added by: pymd
 
 PDIR="$HOME/.config/polybar"
 LAUNCH="polybar-msg cmd restart"
