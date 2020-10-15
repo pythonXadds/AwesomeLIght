@@ -6,24 +6,21 @@ echo "Welcome pymd"
 # Sets the screen resolution for my two monitors
 xrandr --output LVDS1 --off --output VGA1 --primary --mode 1280x1024 --pos 0x0 --rotate normal --output VIRTUAL1 --off
 
-# function
-#installpkg(){ pacman --noconfirm --needed -S "$1" >/dev/null         2>&1 ;}
-
 
 # System update
-#sudo pacman -Syyu -yy
-sudo apt-get update 
+sudo pacman -Syyu -yy
+
 
 # Install programs
-sudo apt-get install inkscape gimp plank variety lolcat figlet cowsay fish qutebrowser thunar gpick jwm gvim nnn newsboat variety dosbox okular python-pip links --noconfirm -needed -S
+
+sudo pacman -S inkscape gimp plank variety lolcat figlet cowsay qutebrowser discord thunar gpick jwm gvim nnn newsboat variety dosbox okular python-pip links --noconfirm
 
 # Install Spacevim
 
 curl -sLf https://spacevim.org/install.sh | bash
 
 # update system
-#sudo pacman -Sy
-sudo apt-get update
+sudo pacman -Sy
 
 echo "pymd your updates and software installation Should be complete"
 
